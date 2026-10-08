@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhoneria Matias | Virtual Store - Bio Link</title>
+    <meta name="description" content="Sua próxima experiência Apple começa aqui. iPhones, acessórios e assistência técnica especializada com atendimento rápido via WhatsApp.">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="iPhoneria Matias | Virtual Store">
+    <meta property="og:description" content="iPhones novos e seminovos, acessórios premium e assistência especializada.">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            yellow: '#F3CA3E',
+                            yellowDark: '#D9B124',
+                            yellowLight: '#FDF3C8',
+                            dark: '#111111',
+                            cardBg: '#1A1A1A',
+                            surface: '#222222',
+                            grayText: '#A1A1AA'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0A0A0A;
+            color: #F4F4F5;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .gold-gradient {
+            background: linear-gradient(135deg, #FDF3C8 0%, #F3CA3E 50%, #D9B124 100%);
+        }
+
+        .gold-border-gradient {
+            border-image: linear-gradient(135deg, #F3CA3E, #111111) 1;
+        }
+
+        .btn-glow {
+            box-shadow: 0 0 20px rgba(243, 202, 62, 0.25);
+        }
+
+        .btn-glow:hover {
+            box-shadow: 0 0 28px rgba(243, 202, 62, 0.45);
+        }
+
+        .glass-card {
+            background: rgba(26, 26, 26, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0A0A0A;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-start p-0 sm:p-4 bg-black">
+
+    <!-- Main Outer Wrapper -->
+    <div class="w-full max-w-md mx-auto min-h-screen sm:min-h-0 sm:my-4 sm:rounded-3xl bg-[#0F0F0F] text-zinc-100 border border-zinc-800 shadow-2xl overflow-hidden flex flex-col">
+        
+        <!-- TOP BRANDING BAR / LOGO HEADER -->
+        <header class="w-full bg-brand-yellow p-6 text-brand-dark flex flex-col items-center justify-center text-center relative shadow-lg">
+            
+            <!-- SVG Logo Replica matching image_df7ea0.png -->
+            <div class="w-28 h-28 relative mb-2 flex items-center justify-center">
+                <svg viewBox="0 0 200 200" class="w-full h-full drop-shadow-md" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Apple silhouette -->
+                    <path d="M72.2 46.8C75.8 42.4 78.2 36.3 77.5 30.2C72.2 30.4 65.8 33.7 62 38.1C58.6 42 55.6 48.3 56.5 54.3C62.4 54.8 68.5 51.2 72.2 46.8ZM76.8 56.1C68.6 56.1 61.2 61 56.8 61C52.3 61 45.9 56.6 39 56.8C29.9 56.9 21.6 62.1 16.9 70.3C7.4 86.8 14.5 111.2 23.7 124.5C28.2 131 33.6 138.2 40.7 137.9C47.5 137.6 50.1 133.5 58.3 133.5 C66.4 133.5 68.8 137.9 76 137.8C83.3 137.6 88 131.1 92.5 124.6C97.7 117 99.8 109.7 100 109.3C99.8 109.2 86.1 103.9 85.9 88.1C85.7 74.9 96.5 68.6 97 68.3C90.8 59.2 81.3 56.5 76.8 56.1Z" fill="#111111"/>
+                    <!-- IM Monogram -->
+                    <text x="105" y="128" font-family="'Times New Roman', serif" font-weight="bold" font-size="88" fill="#111111" letter-spacing="-2">IM</text>
+                    <!-- IPHONERIA MATIAS -->
+                    <text x="100" y="162" font-family="'Inter', sans-serif" font-weight="900" font-size="13" fill="#111111" text-anchor="middle" letter-spacing="2">IPHONERIA MATIAS</text>
+                    <!-- Divider top -->
+                    <line x1="20" y1="172" x2="180" y2="172" stroke="#111111" stroke-width="1.2"/>
+                    <!-- VIRTUAL STORE -->
+                    <text x="100" y="184" font-family="'Inter', sans-serif" font-weight="700" font-size="10.5" fill="#111111" text-anchor="middle" letter-spacing="3">VIRTUAL STORE</text>
+                    <!-- Divider bottom -->
+                    <line x1="20" y1="190" x2="180" y2="190" stroke="#111111" stroke-width="1.2"/>
+                </svg>
+            </div>
+
+            <h1 class="text-xl font-extrabold tracking-tight text-brand-dark">iPhoneria Matias</h1>
+            <p class="text-xs font-semibold tracking-widest uppercase opacity-80 mt-0.5">Virtual Store Apple Specialist</p>
+        </header>
+
+        <!-- MAIN BODY CONTENT -->
+        <main class="flex-1 p-4 space-y-6">
+
+            <!-- 1. CAPTAÇÃO DE LEAD NO INÍCIO (FUNIL INTERATIVO) -->
+            <section id="funnel-section" class="glass-card rounded-2xl p-5 border border-brand-yellow/30 relative overflow-hidden shadow-xl">
+                <!-- Decorative background blur -->
+                <div class="absolute -top-12 -right-12 w-28 h-28 bg-brand-yellow/10 rounded-full blur-2xl"></div>
+
+                <div class="flex items-center space-x-2 mb-3">
+                    <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-brand-yellow text-brand-dark font-bold text-xs">
+                        <i class="fa-solid fa-bolt"></i>
+                    </span>
+                    <h2 class="text-base font-bold text-white tracking-wide">Atendimento Rápido</h2>
+                </div>
+
+                <!-- STEP 1: CHOICE SELECTION -->
+                <div id="funnel-step-1" class="space-y-3">
+                    <p class="text-sm text-zinc-300 font-medium">Olá! O que você está procurando hoje?</p>
+                    
+                    <div class="grid grid-cols-2 gap-2 text-xs font-medium">
+                        <button onclick="selectOption('Comprar iPhone')" class="funnel-opt flex items-center p-3 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-brand-yellow hover:bg-zinc-800 transition text-left space-x-2">
+                            <i class="fa-solid fa-mobile-screen-button text-brand-yellow text-base"></i>
+                            <span>Comprar iPhone</span>
+                        </button>
+
+                        <button onclick="selectOption('Comprar Acessórios')" class="funnel-opt flex items-center p-3 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-brand-yellow hover:bg-zinc-800 transition text-left space-x-2">
+                            <i class="fa-solid fa-headphones text-brand-yellow text-base"></i>
+                            <span>Acessórios</span>
+                        </button>
+
+                        <button onclick="selectOption('Trocar meu iPhone')" class="funnel-opt flex items-center p-3 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-brand-yellow hover:bg-zinc-800 transition text-left space-x-2">
+                            <i class="fa-solid fa-arrows-rotate text-brand-yellow text-base"></i>
+                            <span>Trocar meu iPhone</span>
+                        </button>
+
+                        <button onclick="selectOption('Assistência Técnica')" class="funnel-opt flex items-center p-3 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-brand-yellow hover:bg-zinc-800 transition text-left space-x-2">
+                            <i class="fa-solid fa-wrench text-brand-yellow text-base"></i>
+                            <span>Assistência Técnica</span>
+                        </button>
+
+                        <button onclick="selectOption('Fazer Orçamento')" class="funnel-opt flex items-center p-3 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-brand-yellow hover:bg-zinc-800 transition text-left space-x-2">
+                            <i class="fa-solid fa-calculator text-brand-yellow text-base"></i>
+                            <span>Fazer Orçamento</span>
+                        </button>
+
+                        <button onclick="selectOption('Outro Assunto')" class="funnel-opt flex items-center p-3 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-brand-yellow hover:bg-zinc-800 transition text-left space-x-2">
+                            <i class="fa-solid fa-circle-question text-brand-yellow text-base"></i>
+                            <span>Outro Assunto</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- STEP 2: LEAD FORM -->
+                <div id="funnel-step-2" class="hidden space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span id="selected-badge" class="inline-block text-xs bg-brand-yellow/20 text-brand-yellow px-2.5 py-1 rounded-full font-semibold border border-brand-yellow/30">
+                            Interesse: <span id="badge-text">---</span>
+                        </span>
+                        <button onclick="resetFunnel()" class="text-xs text-zinc-400 hover:text-white underline">
+                            Alterar
+                        </button>
+                    </div>
+
+                    <form onsubmit="handleFunnelSubmit(event)" class="space-y-3">
+                        <div>
+                            <label class="block text-xs font-medium text-zinc-400 mb-1">Seu Nome *</label>
+                            <input type="text" id="lead-name" required placeholder="Digite seu nome"
+                                class="w-full px-3 py-2.5 rounded-xl bg-zinc-900 border border-zinc-700 text-white text-sm focus:outline-none focus:border-brand-yellow transition">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-zinc-400 mb-1">Seu WhatsApp *</label>
+                            <input type="tel" id="lead-phone" required placeholder="(00) 90000-0000"
+                                class="w-full px-3 py-2.5 rounded-xl bg-zinc-900 border border-zinc-700 text-white text-sm focus:outline-none focus:border-brand-yellow transition">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-zinc-400 mb-1">Qual modelo/serviço específico?</label>
+                            <input type="text" id="lead-detail" placeholder="Ex: iPhone 13 128GB, Troca de tela..."
+                                class="w-full px-3 py-2.5 rounded-xl bg-zinc-900 border border-zinc-700 text-white text-sm focus:outline-none focus:border-brand-yellow transition">
+                        </div>
+
+                        <button type="submit" class="w-full py-3 bg-brand-yellow text-brand-dark font-bold text-sm rounded-xl hover:bg-yellow-400 active:scale-98 transition flex items-center justify-center space-x-2 btn-glow">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Receber Atendimento via WhatsApp</span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- 2. CABEÇALHO DE PROFILE / BIO -->
+            <section class="text-center space-y-3 px-2">
+                <div class="inline-flex items-center space-x-2 text-xs bg-zinc-900 text-zinc-300 px-3 py-1 rounded-full border border-zinc-800">
+                    <i class="fa-brands fa-instagram text-brand-yellow"></i>
+                    <span class="font-semibold text-brand-yellow">@iphoneria.matias</span>
+                </div>
+
+                <p class="text-sm text-zinc-300 leading-relaxed font-normal">
+                    Sua próxima experiência Apple começa aqui.<br>
+                    <span class="text-zinc-400 text-xs">iPhones, acessórios e soluções completas com garantia e máxima segurança.</span>
+                </p>
+
+                <!-- Trust Indicators Bar -->
+                <div class="flex items-center justify-around py-2 px-3 rounded-xl bg-zinc-900/60 border border-zinc-800/80 text-[11px] font-medium text-zinc-300">
+                    <div class="flex items-center space-x-1">
+                        <i class="fa-solid fa-circle-check text-brand-yellow"></i>
+                        <span>Atendimento Rápido</span>
+                    </div>
+                    <span class="text-zinc-700">•</span>
+                    <div class="flex items-center space-x-1">
+                        <i class="fa-solid fa-shield-halved text-brand-yellow"></i>
+                        <span>Garantia</span>
+                    </div>
+                    <span class="text-zinc-700">•</span>
+                    <div class="flex items-center space-x-1">
+                        <i class="fa-solid fa-award text-brand-yellow"></i>
+                        <span>100% Original</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. DESTAQUES DA LOJA (4 PRODUTOS PRINCIPAIS) -->
+            <section class="space-y-3">
+                <div class="flex items-center justify-between px-1">
+                    <h3 class="text-sm font-bold text-white tracking-wide uppercase flex items-center space-x-2">
+                        <i class="fa-solid fa-star text-brand-yellow"></i>
+                        <span>Destaques da Loja</span>
+                    </h3>
+                    <span class="text-[10px] text-zinc-500 uppercase tracking-widest font-semibold">Mais Pedidos</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3" id="products-grid">
+                    <!-- Product items dynamically generated or structured -->
+
+                    <!-- Product 1 -->
+                    <div class="bg-zinc-900/90 border border-zinc-800 rounded-2xl p-3 flex flex-col justify-between hover:border-brand-yellow/50 transition">
+                        <div class="space-y-2">
+                            <div class="w-full h-32 bg-zinc-950 rounded-xl flex items-center justify-center p-2 relative overflow-hidden group">
+                                <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=400&auto=format&fit=crop&q=80" 
+                                     alt="iPhone 15" 
+                                     class="h-full object-contain group-hover:scale-105 transition duration-300"
+                                     onerror="this.onerror=null; this.src='https://placehold.co/300x300/1a1a1a/f3ca3e?text=iPhone+15';">
+                                <span class="absolute top-2 left-2 bg-brand-yellow text-brand-dark text-[9px] font-extrabold px-1.5 py-0.5 rounded">Novo</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xs text-white">iPhone 15</h4>
+                                <p class="text-[10px] text-zinc-400 line-clamp-2 mt-0.5">Desempenho, câmera de 48MP e Dynamic Island.</p>
+                            </div>
+                        </div>
+                        <div class="mt-3 pt-2 border-t border-zinc-800/80 flex flex-col space-y-2">
+                            <span class="text-xs font-extrabold text-brand-yellow">Consulte Valores</span>
+                            <button onclick="inquireProduct('iPhone 15')" class="w-full py-1.5 px-2 bg-zinc-800 hover:bg-brand-yellow hover:text-brand-dark text-white rounded-lg text-xs font-semibold transition flex items-center justify-center space-x-1">
+                                <i class="fa-brands fa-whatsapp text-xs"></i>
+                                <span>Tenho Interesse</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="bg-zinc-900/90 border border-zinc-800 rounded-2xl p-3 flex flex-col justify-between hover:border-brand-yellow/50 transition">
+                        <div class="space-y-2">
+                            <div class="w-full h-32 bg-zinc-950 rounded-xl flex items-center justify-center p-2 relative overflow-hidden group">
+                                <img src="https://images.unsplash.com/photo-1695048133021-dbe0381e4693?w=400&auto=format&fit=crop&q=80" 
+                                     alt="iPhone 15 Pro" 
+                                     class="h-full object-contain group-hover:scale-105 transition duration-300"
+                                     onerror="this.onerror=null; this.src='https://placehold.co/300x300/1a1a1a/f3ca3e?text=iPhone+15+Pro';">
+                                <span class="absolute top-2 left-2 bg-brand-yellow text-brand-dark text-[9px] font-extrabold px-1.5 py-0.5 rounded">Pro</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xs text-white">iPhone 15 Pro</h4>
+                                <p class="text-[10px] text-zinc-400 line-clamp-2 mt-0.5">Titanio premium e o poderoso chip A17 Pro.</p>
+                            </div>
+                        </div>
+                        <div class="mt-3 pt-2 border-t border-zinc-800/80 flex flex-col space-y-2">
+                            <span class="text-xs font-extrabold text-brand-yellow">Consulte Valores</span>
+                            <button onclick="inquireProduct('iPhone 15 Pro')" class="w-full py-1.5 px-2 bg-zinc-800 hover:bg-brand-yellow hover:text-brand-dark text-white rounded-lg text-xs font-semibold transition flex items-center justify-center space-x-1">
+                                <i class="fa-brands fa-whatsapp text-xs"></i>
+                                <span>Tenho Interesse</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="bg-zinc-900/90 border border-zinc-800 rounded-2xl p-3 flex flex-col justify-between hover:border-brand-yellow/50 transition">
+                        <div class="space-y-2">
+                            <div class="w-full h-32 bg-zinc-950 rounded-xl flex items-center justify-center p-2 relative overflow-hidden group">
+                                <img src="https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=400&auto=format&fit=crop&q=80" 
+                                     alt="AirPods" 
+                                     class="h-full object-contain group-hover:scale-105 transition duration-300"
+                                     onerror="this.onerror=null; this.src='https://placehold.co/300x300/1a1a1a/f3ca3e?text=AirPods';">
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xs text-white">AirPods Apple</h4>
+                                <p class="text-[10px] text-zinc-400 line-clamp-2 mt-0.5">Áudio imersivo e cancelamento de ruído ativado.</p>
+                            </div>
+                        </div>
+                        <div class="mt-3 pt-2 border-t border-zinc-800/80 flex flex-col space-y-2">
+                            <span class="text-xs font-extrabold text-brand-yellow">Consulte Valores</span>
+                            <button onclick="inquireProduct('AirPods Apple')" class="w-full py-1.5 px-2 bg-zinc-800 hover:bg-brand-yellow hover:text-brand-dark text-white rounded-lg text-xs font-semibold transition flex items-center justify-center space-x-1">
+                                <i class="fa-brands fa-whatsapp text-xs"></i>
+                                <span>Tenho Interesse</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="bg-zinc-900/90 border border-zinc-800 rounded-2xl p-3 flex flex-col justify-between hover:border-brand-yellow/50 transition">
+                        <div class="space-y-2">
+                            <div class="w-full h-32 bg-zinc-950 rounded-xl flex items-center justify-center p-2 relative overflow-hidden group">
+                                <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&auto=format&fit=crop&q=80" 
+                                     alt="Apple Watch" 
+                                     class="h-full object-contain group-hover:scale-105 transition duration-300"
+                                     onerror="this.onerror=null; this.src='https://placehold.co/300x300/1a1a1a/f3ca3e?text=Apple+Watch';">
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xs text-white">Apple Watch</h4>
+                                <p class="text-[10px] text-zinc-400 line-clamp-2 mt-0.5">Monitoramento de saúde e praticidade diária.</p>
+                            </div>
+                        </div>
+                        <div class="mt-3 pt-2 border-t border-zinc-800/80 flex flex-col space-y-2">
+                            <span class="text-xs font-extrabold text-brand-yellow">Consulte Valores</span>
+                            <button onclick="inquireProduct('Apple Watch')" class="w-full py-1.5 px-2 bg-zinc-800 hover:bg-brand-yellow hover:text-brand-dark text-white rounded-lg text-xs font-semibold transition flex items-center justify-center space-x-1">
+                                <i class="fa-brands fa-whatsapp text-xs"></i>
+                                <span>Tenho Interesse</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 4. CTA INTERMEDIÁRIA DE CONVERSÃO -->
+            <section class="p-4 rounded-2xl bg-gradient-to-r from-zinc-900 via-zinc-900 to-zinc-950 border border-brand-yellow/30 text-center space-y-3 relative overflow-hidden">
+                <div class="space-y-1">
+                    <h3 class="text-sm font-bold text-white">Encontrou o produto que procura?</h3>
+                    <p class="text-xs text-zinc-400">Fale com nossa equipe agora mesmo e consulte a disponibilidade de estoque e condições de pagamento.</p>
+                </div>
+
+                <a href="#" onclick="openGeneralWhatsApp('Atendimento Geral'); return false;" class="inline-flex items-center justify-center space-x-2 w-full py-3 bg-brand-yellow text-brand-dark font-extrabold text-sm rounded-xl hover:bg-yellow-400 transition shadow-lg btn-glow">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Falar Direto no WhatsApp</span>
+                </a>
+            </section>
+
+            <!-- 5. PRINCIPAIS LINKS DE CONTATO -->
+            <section class="space-y-2.5">
+                <h3 class="text-xs font-bold text-zinc-400 uppercase tracking-wider px-1">Fale com a Gente</h3>
+
+                <!-- Link 1: WhatsApp (High Priority Highlight) -->
+                <a href="#" onclick="openGeneralWhatsApp('Atendimento Direto'); return false;" 
+                   class="flex items-center justify-between p-3.5 rounded-2xl bg-gradient-to-r from-emerald-600 to-emerald-500 text-white font-bold shadow-md hover:opacity-95 transition">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center text-xl">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <div class="text-sm leading-tight">Atendimento WhatsApp</div>
+                            <div class="text-[11px] font-normal text-emerald-100">Orçamentos e compras em tempo real</div>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right text-xs opacity-70"></i>
+                </a>
+
+                <!-- Link 2: Instagram Direct -->
+                <a href="https://instagram.com" target="_blank" id="link-instagram" 
+                   class="flex items-center justify-between p-3.5 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-white font-medium transition">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-yellow-500 via-rose-500 to-purple-600 flex items-center justify-center text-xl">
+                            <i class="fa-brands fa-instagram text-white"></i>
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-zinc-100">Siga no Instagram</div>
+                            <div class="text-[11px] text-zinc-400">Novidades diárias e unboxings</div>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right text-xs text-zinc-500"></i>
+                </a>
+
+                <!-- Link 3: Location / Map -->
+                <a href="#" onclick="openLocation(); return false;" 
+                   class="flex items-center justify-between p-3.5 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-white font-medium transition">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-xl bg-zinc-800 flex items-center justify-center text-brand-yellow text-lg">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-zinc-100">Localização da Loja</div>
+                            <div class="text-[11px] text-zinc-400" id="link-address-text">Ver endereço completo e como chegar</div>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right text-xs text-zinc-500"></i>
+                </a>
+
+                <!-- Link 4: Catálogo Completo -->
+                <a href="#" onclick="openGeneralWhatsApp('Quero ver o Catálogo Completo'); return false;" 
+                   class="flex items-center justify-between p-3.5 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-white font-medium transition">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-xl bg-zinc-800 flex items-center justify-center text-brand-yellow text-lg">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-zinc-100">Catálogo de Produtos</div>
+                            <div class="text-[11px] text-zinc-400">Solicitar PDF do estoque atualizado</div>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right text-xs text-zinc-500"></i>
+                </a>
+
+                <!-- Link 5: Assistência Técnica -->
+                <a href="#" onclick="selectOption('Assistência Técnica'); scrollToFunnel(); return false;" 
+                   class="flex items-center justify-between p-3.5 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-white font-medium transition">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-xl bg-zinc-800 flex items-center justify-center text-brand-yellow text-lg">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-zinc-100">Assistência Especializada</div>
+                            <div class="text-[11px] text-zinc-400">Troca de tela, bateria e manutenção</div>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right text-xs text-zinc-500"></i>
+                </a>
+            </section>
+
+            <!-- 6. SEÇÃO DE CONFIANÇA & BENEFÍCIOS -->
+            <section class="glass-card rounded-2xl p-4 border border-zinc-800/80 space-y-3">
+                <h3 class="text-xs font-bold text-white uppercase tracking-wider flex items-center space-x-1.5">
+                    <i class="fa-solid fa-shield-cat text-brand-yellow"></i>
+                    <span>Por que escolher a iPhoneria Matias?</span>
+                </h3>
+
+                <div class="grid grid-cols-1 gap-2.5 text-xs text-zinc-300">
+                    <div class="flex items-start space-x-3 p-2 bg-zinc-900/50 rounded-xl">
+                        <i class="fa-solid fa-user-shield text-brand-yellow text-base mt-0.5"></i>
+                        <div>
+                            <span class="font-bold text-white block">Atendimento Humanizado</span>
+                            <span class="text-[11px] text-zinc-400">Consultores prontos para entender sua necessidade.</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3 p-2 bg-zinc-900/50 rounded-xl">
+                        <i class="fa-solid fa-box-archive text-brand-yellow text-base mt-0.5"></i>
+                        <div>
+                            <span class="font-bold text-white block">Aparelhos Inspecionados</span>
+                            <span class="text-[11px] text-zinc-400">Rigoroso controle de qualidade e procedência garantida.</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3 p-2 bg-zinc-900/50 rounded-xl">
+                        <i class="fa-solid fa-truck-fast text-brand-yellow text-base mt-0.5"></i>
+                        <div>
+                            <span class="font-bold text-white block">Entrega Segura e Rápida</span>
+                            <span class="text-[11px] text-zinc-400">Opções de retirada ou envio expresso com seguro.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECONDARY CTA -->
+            <section class="text-center p-4 bg-zinc-900/40 rounded-2xl border border-zinc-800/60 space-y-2">
+                <p class="text-xs text-zinc-300 font-medium">Ainda com dúvidas de qual iPhone escolher?</p>
+                <button onclick="openGeneralWhatsApp('Quero ajuda para escolher o iPhone ideal');" 
+                        class="w-full py-2.5 bg-zinc-800 hover:bg-zinc-700 text-brand-yellow font-bold text-xs rounded-xl transition border border-brand-yellow/20">
+                    Quero Ajuda Personalizada
+                </button>
+            </section>
+
+        </main>
+
+        <!-- 7. RODAPÉ COMPLETO -->
+        <footer class="w-full bg-zinc-950 p-6 border-t border-zinc-800 text-center space-y-4">
+            
+            <!-- Mini Footer Brand -->
+            <div class="flex flex-col items-center justify-center space-y-1">
+                <div class="w-12 h-12 bg-brand-yellow rounded-xl flex items-center justify-center p-1 text-brand-dark">
+                    <!-- Mini Logo Symbol -->
+                    <i class="fa-brands fa-apple text-2xl"></i>
+                </div>
+                <div class="font-bold text-sm text-white mt-1">iPhoneria Matias</div>
+                <div class="text-[10px] text-brand-yellow font-semibold uppercase tracking-widest">Virtual Store</div>
+            </div>
+
+            <!-- Footer info list -->
+            <div class="space-y-1.5 text-xs text-zinc-400">
+                <p id="footer-address"><i class="fa-solid fa-location-dot text-brand-yellow mr-1"></i> Atendimento Online & Presencial</p>
+                <p id="footer-hours"><i class="fa-regular fa-clock text-brand-yellow mr-1"></i> Seg a Sáb: 09:00 - 19:00</p>
+                <p id="footer-phone"><i class="fa-brands fa-whatsapp text-brand-yellow mr-1"></i> WhatsApp Oficial Disponível</p>
+            </div>
+
+            <div class="pt-3 border-t border-zinc-900 text-[10px] text-zinc-600 flex flex-col items-center justify-center space-y-1">
+                <p>© <span id="year">2026</span> iPhoneria Matias. Todos os direitos reservados.</p>
+                <p class="text-[9px] text-zinc-600">Página Otimizada para Vendas & Bio do Instagram</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        /* ==========================================================================
+           CONFIGURAÇÕES DA IPHONERIA MATIAS (Facilmente Editável)
+           ========================================================================== */
+        const STORE_CONFIG = {
+            name: "iPhoneria Matias",
+            instagramHandle: "@iphoneria.matias",
+            instagramUrl: "https://instagram.com",
+            whatsappNumber: "5511999999999", // Digite o WhatsApp oficial da loja aqui (apenas números com DDD)
+            address: "São Paulo, SP - Atendimento com hora marcada",
+            businessHours: "Segunda a Sábado das 09h às 19h",
+            locationMapUrl: "https://maps.google.com" // Link do Google Maps
+        };
+
+        // State object
+        let leadState = {
+            interest: "",
+            name: "",
+            phone: "",
+            detail: ""
+        };
+
+        // Initialize dynamic values on window load
+        window.onload = function() {
+            document.getElementById('year').textContent = new Date().getFullYear();
+            
+            // Set links
+            const instaLink = document.getElementById('link-instagram');
+            if (instaLink) instaLink.href = STORE_CONFIG.instagramUrl;
+
+            const addrText = document.getElementById('link-address-text');
+            if (addrText) addrText.textContent = STORE_CONFIG.address;
+
+            const footerAddr = document.getElementById('footer-address');
+            if (footerAddr) footerAddr.innerHTML = `<i class="fa-solid fa-location-dot text-brand-yellow mr-1"></i> ${STORE_CONFIG.address}`;
+
+            const footerHours = document.getElementById('footer-hours');
+            if (footerHours) footerHours.innerHTML = `<i class="fa-regular fa-clock text-brand-yellow mr-1"></i> ${STORE_CONFIG.businessHours}`;
+        };
+
+        /* FUNNEL STEP CONTROLLER */
+        function selectOption(optionText) {
+            leadState.interest = optionText;
+            
+            // Update step 2 UI
+            document.getElementById('badge-text').textContent = optionText;
+            
+            // Toggle view
+            document.getElementById('funnel-step-1').classList.add('hidden');
+            document.getElementById('funnel-step-2').classList.remove('hidden');
+
+            // Scroll focus to funnel if needed
+            scrollToFunnel();
+        }
+
+        function resetFunnel() {
+            leadState.interest = "";
+            document.getElementById('funnel-step-2').classList.add('hidden');
+            document.getElementById('funnel-step-1').classList.remove('hidden');
+        }
+
+        function scrollToFunnel() {
+            const el = document.getElementById('funnel-section');
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+
+        /* HANDLE LEAD FORM SUBMISSION */
+        function handleFunnelSubmit(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('lead-name').value.trim();
+            const phone = document.getElementById('lead-phone').value.trim();
+            const detail = document.getElementById('lead-detail').value.trim();
+
+            if (!name || !phone) {
+                showToast("Por favor, preencha seu nome e WhatsApp.");
+                return;
+            }
+
+            leadState.name = name;
+            leadState.phone = phone;
+            leadState.detail = detail;
+
+            // Build prefilled WhatsApp message
+            let message = `Olá! Meu nome é *${name}*.\n`;
+            message += `Tenho interesse em: *${leadState.interest}*.\n`;
+            if (detail) {
+                message += `Detalhes: ${detail}\n`;
+            }
+            message += `Gostaria de receber mais informações e um orçamento!`;
+
+            sendToWhatsApp(message);
+        }
+
+        /* PRODUCT DIRECT INQUIRY */
+        function inquireProduct(productName) {
+            const message = `Olá! Tenho interesse no *${productName}*.\nGostaria de saber a disponibilidade em estoque e as opções de pagamento!`;
+            sendToWhatsApp(message);
+        }
+
+        /* GENERAL WHATSAPP OPENER */
+        function openGeneralWhatsApp(motive) {
+            const message = `Olá! Vim através da Bio do Instagram (*${motive}*). Gostaria de mais informações.`;
+            sendToWhatsApp(message);
+        }
+
+        /* LOCATION OPENER */
+        function openLocation() {
+            if (STORE_CONFIG.locationMapUrl && STORE_CONFIG.locationMapUrl !== "#") {
+                window.open(STORE_CONFIG.locationMapUrl, '_blank');
+            } else {
+                openGeneralWhatsApp('Solicitar Endereço e Localização');
+            }
+        }
+
+        /* HELPER TO BUILD WHATSAPP URL AND OPEN */
+        function sendToWhatsApp(message) {
+            const encoded = encodeURIComponent(message);
+            const waUrl = `https://wa.me/${STORE_CONFIG.whatsappNumber}?text=${encoded}`;
+            window.open(waUrl, '_blank');
+        }
+
+        /* CUSTOM TOAST NOTIFICATION */
+        function showToast(text) {
+            const existing = document.getElementById('custom-toast');
+            if (existing) existing.remove();
+
+            const toast = document.createElement('div');
+            toast.id = 'custom-toast';
+            toast.className = 'fixed bottom-5 left-1/2 -translate-x-1/2 bg-brand-yellow text-brand-dark px-4 py-2.5 rounded-xl font-bold text-xs shadow-2xl z-50 transition transform duration-300 animate-bounce';
+            toast.textContent = text;
+
+            document.body.appendChild(toast);
+
+            setTimeout(() => {
+                toast.remove();
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
